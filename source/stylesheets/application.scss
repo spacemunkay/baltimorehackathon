@@ -1,37 +1,73 @@
-/*-----------------------------------------------------------------------------------
-  Global Reset v0.3 (based on http://meyerweb.com/eric/tools/css/reset/ - v1.0 | 20080212)
------------------------------------------------------------------------------------*/
-   html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
-   body { line-height: 1; }
-   ol, ul { list-style: none; }
-   :focus { outline: 0; }
-   table { border-collapse: collapse; border-spacing: 0; }
-   /* HTML5 */
-   article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+@import "bourbon";
 
+/*---------------------------
+  Fonts
+---------------------------*/
+
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+@font-face {
+  font-family: "Atlas Solid";
+  src: url("/fonts/atlas-solid.eot?") format("eot"),
+       url("/fonts/atlas-solid.woff") format("woff"),
+       url("/fonts/atlas-solid.ttf") format("truetype"),
+       url("/fonts/atlas-solid.svg#AtlasSolid") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 
 /*---------------------------
   Elements
 ---------------------------*/
-  body { background: #CCBA96 url(../images/background.png); color: #000; font-family: Georgia, 'Times New Roman', serif; font-size: 11px; min-width: 900px; }
-  h1, h2, h3, h4, h5, h6 { font-weight: normal; letter-spacing: 0.02em; }
-  h1 { font-size: 48px; margin-bottom: 10px; position: relative; text-align: center; text-transform: uppercase; z-index: 2; }
-  h1 small { font-size: 24px; text-transform: none; }
-  h1 span { font-size: 58px;  }
-  h2 { font-size: 30px; margin-bottom: 15px; }
-  h3 { font-size: 18px; line-height: 1.4; margin-bottom 10px; }
-  a { color: #000; }
-  a:hover { color: #333; }
-  p { font-size: 18px; line-height: 1.4; margin-bottom: 20px; }
-  section { border-top: 5px solid rgba(106, 92, 66, 0.15); margin-bottom: 35px; padding: 25px 0 0 0; }
 
-  header { margin-top: 20px; }
-  header a { text-decoration: none; }
+body {
+  background: #CCBA96 url(../images/background.png);
+  color: #000;
+  font-family: "futura-pt", sans-serif;
+  font-size: 16px;
+}
 
-  /*footer { background: rgba(103, 91, 68, 0.150) url(../images/footer_texture.png) repeat-x; height: 200px; margin-top: 150px; text-align: center; }*/
-  footer { background: rgba(103, 91, 68, 0.150) repeat-x; height: 200px; margin-top: 150px; text-align: center; }
-  footer p { font-size: 13px; padding-top: 15px; }
-  footer p small { font-size: 11px; }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+
+h2 { font-size: 30px; margin-bottom: 15px; }
+h3 { font-size: 18px; line-height: 1.4; margin-bottom: 10px; }
+a { color: #000; }
+a:hover { color: #333; }
+p { font-size: 18px; line-height: 1.4; margin: 0 0 1.6em 0; }
+section { border-top: 5px solid rgba(106, 92, 66, 0.15); margin: 1.6em 0; padding-top: 1.6em; }
+
+header h1 {
+  margin: 1em 0;
+  text-align: center;
+}
+
+header h1 .title {
+  font-family: "Atlas Solid";
+  font-size: 1.6em;
+}
+
+header h1 .caption {
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+footer {
+  background: rgba(103, 91, 68, 0.150);
+  height: 200px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 13px;
+  padding-top: 15px;
+}
+
+footer p small {
+  font-size: 11px;
+}
 
 /*-------------------------------------------
   Global
@@ -43,9 +79,21 @@
   .center { text-align: center; }
   .clear { clear: both; }
 
-  .column { float: left; margin-bottom: 15px; padding: 0 0 0 10px; width: 290px; }
-  .column.double { width: 440px; }
-  .column.full { float: none; width: 890px; }
+  .column {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 1em;
+    padding: 0;
+    width: 33%;
+  }
+
+  .column.double { width: 50%; }
+  .column.full { width: 100%; }
+
+  .column h2 {
+    margin-top: 0;
+  }
+
   .column p { padding-right: 20px; }
   .column p.second { margin-top: 20px; }
   .column p.prize { padding-left: 15px; padding-right: 20px; }
@@ -54,7 +102,7 @@
   .button:hover { color: #e7e7e7; }
 
   #container { overflow: hidden; position: relative; }
-  #wrapper { margin: 0 auto; position: relative; width: 900px; }
+  #wrapper { margin: 0 auto; position: relative; width: 90%; max-width: 900px; }
 
   #feature { height: 220px; margin: 5px 0 50px 10px; }
   #feature li { display: block; float: left; list-style: none; margin-right: 10px; position: relative; }
@@ -111,8 +159,24 @@
   .attendees li { display: block; float: left; font-size: 14px; height: 24px; line-height: 24px; margin: 0 10px 10px 0;  }
   .attendees li a { background-color: #BCAB88; background-color: rgba(106, 92, 66, 0.15); -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; display: block; float: left; padding: 0 5px; text-decoration: none; }
   .attendees li a:hover { background-color: #AF9F7D; background-color: rgba(106, 92, 66, 0.25); color: #000; }
-  #ribbon { height: 40px; text-align: center; color: #9b8c6f; font-size: 18px; line-height: 40px; }
 
+  #ribbon {
+    height: 40px;
+    text-align: center;
+    color: #9b8c6f;
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  #ribbon img {
+    height: 12px;
+  }
+
+  #ribbon span {
+    display: inline-block;
+    margin: 0 1em;
+    font-size: 0.85em;
+  }
 
 
 /* Twitter bootstrap button */
@@ -182,25 +246,24 @@
 
 div#how-do-i-participate p#sign-up-button { text-align: center; }
 
-/*-------------------------------------------
-  iPhone
--------------------------------------------*/
-/*  @media all and (max-width: 322px) {
-    body { min-width: auto; width: 320px; }
-    h1 { font-size: 36px; }
-    h2 { font-size: 28px; }
-    img { max-width: 290px; }
-    .block_left { display: block; float: none; }
-    #wrapper { margin: auto; position: static; width: 300px; }
-    #container { overflow: auto; position: static; width: 300px; }
-    #feature { height: auto; margin: 10px 0; padding-left: 10px; }
-    #feature li { float: none; height: auto; width: 300px; }
-    #feature li h2 { font-size: 36px; position: static; }
-    #feature img { display: none; }
-    .column { float: none; }
-    .column.full { width: 290px; }
-    .column.double { width: 290px; }
-    footer { width: 320px; }
-    footer p { margin: 0 auto; width: 300px; }
-    #octopus { display: none; }
-  }*/
+@media screen and (max-width: 500px) {
+  #ribbon {
+    display: none;
+  }
+
+  header h1 .caption {
+    font-size: 0.55em;
+  }
+
+  header h1 .title {
+    font-size: 1em;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .column h2 {
+    text-align: center;
+  }
+}
