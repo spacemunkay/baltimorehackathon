@@ -1,0 +1,65 @@
+// ---------------------------
+// Fonts
+// ---------------------------
+
+@font-face {
+  font-family: "Atlas Regular";
+  src: url("/fonts/atlas-regular.eot?") format("eot"),
+       url("/fonts/atlas-regular.woff") format("woff"),
+       url("/fonts/atlas-regular.ttf") format("truetype"),
+       url("/fonts/atlas-regular.svg#AtlasRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin better-font-rendering {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin super-heading-text {
+  font-family: "Atlas Regular", serif;
+}
+
+@mixin body-text {
+  font-family: "futura-pt", sans-serif;
+  font-size: $text-base-size;
+  color: $text-color;
+}
+
+@mixin bold-body-text {
+  @include body-text;
+  font-weight: 500;
+}
+
+// ---------------------------
+// Helpers
+// ---------------------------
+
+// This will add 3 lines before and after the text, like the
+// main heading caption "The Third".
+@mixin lined-heading($size: 140px) {
+  text-transform: uppercase;
+  text-align: center;
+  font-style: italic;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    width: $size;
+    border-top: 0.15em solid $black;
+    height: 0.15em;
+    border-bottom: 0.4em double $black;
+    margin-bottom: 0.3em;
+  }
+
+  &:before {
+    margin-right: 1em;
+  }
+
+  &:after {
+    margin-left: 1em;
+  }
+}
