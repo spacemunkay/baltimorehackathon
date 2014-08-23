@@ -1,0 +1,29 @@
+// ---------------------------
+// Third Party Libraries
+// ---------------------------
+
+@import "bourbon";
+
+// ---------------------------
+// Variables
+// ---------------------------
+
+// Because of the way colors work, we shouldn't actually use
+// true black or white, just colors that we can stand in for them.
+$black: #211914;
+$white: #FDFCFC;
+
+$text-color: $black;
+$text-base-size: 16px;
+
+//---------------------------
+// Baltimore Hackathon CSS
+//---------------------------
+
+@import "application/globals";
+@import "application/scaffolding";
+@import "application/layout";
+@import "application/buttons";
+@import "application/header";
+@import "application/footer";
+@import "application/responsive";

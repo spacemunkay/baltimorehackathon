@@ -1,3 +1,7 @@
+//= require underscore
+//= require jquery.scrollTo
+//= require jquery.eventbrite
+
 var rate = 50;
 var wWidth, wHeight;
 var cloud_files = [ 'cloud1.png', 'cloud2.png', 'cloud3.png', 'cloud4.png'];

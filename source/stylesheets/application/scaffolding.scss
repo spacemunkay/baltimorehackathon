@@ -1,0 +1,70 @@
+* {
+  @include box-sizing(border-box);
+}
+
+body {
+  background: #CCBA96 url(../images/background.png);
+  @include body-text;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+a {
+  color: $black;
+
+  &:hover {
+    color: mix($black, $white, 80%);
+  }
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0 0 1em 0;
+}
+
+section {
+  margin: 1.6em 0;
+  padding-top: 1.6em;
+}
+
+.left {
+  float: left;
+}
+
+.block_left {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+.right {
+  float: right;
+}
+
+.block_right {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
