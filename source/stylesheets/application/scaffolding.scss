@@ -24,6 +24,26 @@ h3 {
   margin-bottom: 10px;
 }
 
+ .flag {
+    position: relative;
+    background-image: url("../images/oldfashionedframe.png");
+    background-size: 260px;
+    width: 250px;
+    height: 93px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .flagscript {
+    position: relative;
+    width: 200px;
+    font-weight: bold;
+    font-size: 26px;
+    position: absolute;
+    bottom: 1.3em;
+    left: 1.6em;
+}
+
 a {
   color: $black;
 
@@ -68,3 +88,4 @@ section {
 .clear {
   clear: both;
 }
+

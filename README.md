@@ -1,6 +1,6 @@
 # Baltimore Hackathon
 
-Website for the second Baltimore Hackathon, June 8-10, 2012. Lives at
+Website for the second Baltimore Hackathon, November 14 - 16, 2014. Lives at
 http://baltimorehackathon.com.
 
 ## System Dependencies
