@@ -48,6 +48,29 @@
     margin-right: 0;
   }
 
+
+
+   .flag {
+    position: relative;
+    background-image: url("../images/oldfashionedframewhite.jpg");
+    background-size: 260px;
+    width: 270px;
+    height: 93px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .flagscript {
+    position: relative;
+    width: 250px;
+    font-weight: bold;
+    font-size: 26px;
+    position: absolute;
+    bottom: 1.3em;
+    left: 1.8em;
+}
+
+
   &.double {
     width: 50%;
   }
@@ -61,6 +84,7 @@
     margin-top: 0;
     font-size: 1.2em;
     text-transform: uppercase;
+
   }
 
 }
