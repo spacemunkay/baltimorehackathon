@@ -49,13 +49,12 @@
   }
 
 
-
-   .flag {
+ .flag {
     position: relative;
-    background-image: url("../images/oldfashionedframewhite.jpg");
+    background-image: url("../images/oldfashionedframeblack.png");
     background-size: 260px;
-    width: 270px;
-    height: 93px;
+    width: 255px;
+    height: 91px;
     display: inline-block;
     vertical-align: top;
   }
@@ -69,7 +68,6 @@
     bottom: 1.3em;
     left: 1.8em;
 }
-
 
   &.double {
     width: 50%;
