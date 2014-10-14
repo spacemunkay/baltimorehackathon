@@ -21,9 +21,9 @@ $text-base-size: 16px;
 //---------------------------
 
 @import "application/globals";
-@import "application/scaffolding";
-@import "application/layout";
-@import "application/buttons";
-@import "application/header";
+@import "application/_scaffolding";
+@import "application/_layout";
+@import "application/_buttons";
+@import "application/_header";
 @import "application/footer";
-@import "application/responsive";
+@import "application/_responsive";
