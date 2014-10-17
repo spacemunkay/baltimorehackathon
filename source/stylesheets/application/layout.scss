@@ -48,6 +48,38 @@
     margin-right: 0;
   }
 
+
+
+   .frame {
+    position: relative;
+    background-image: url("../images/frameopaque2.1.png");
+    background-size: 310px 600px;
+    width: 310px;
+    height: 600px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 2em;
+    padding-top: 4.5em;
+  }
+  
+ 
+  .frame h2 {
+    font-size: 1.2em;
+    font-weight: bold; 
+    margin-bottom: .2em;
+    
+  }
+
+
+  #value {
+    text-align: center;
+    @include super-heading-text;
+    margin-top: .2em;
+    margin-bottom: .2em;
+  }
+ 
+
+
   &.double {
     width: 50%;
   }
