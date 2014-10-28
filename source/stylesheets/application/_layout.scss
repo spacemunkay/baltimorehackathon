@@ -65,6 +65,11 @@
 
 }
 
+.column4 {
+  @extend .column;
+  width: 22.5%;
+}
+
 .hero {
   width: 90%;
   min-width: 280px;
