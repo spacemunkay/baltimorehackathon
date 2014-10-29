@@ -32,8 +32,17 @@
 .section-header {
   @include lined-heading(200px);
   font-size: 1.5em;
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 1em;
+  padding-top: 8px;
+}
+
+.prize-booster {
+  background-image: url(../images/blueribbon.png), url(../images/blueribbon.png);
+  background-position: left, right;
+  background-size: 30px 50px;
+  background-repeat: no-repeat;
+  min-height: 50px;
 }
 
 .column {
