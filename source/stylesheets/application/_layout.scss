@@ -22,6 +22,7 @@
   position: relative;
 }
 
+
 #wrapper {
   margin: 0 auto;
   position: relative;
@@ -36,6 +37,46 @@
   margin-bottom: 1em;
   padding-top: 8px;
 }
+
+#navWrap {
+   height: 30px;
+   background-color: $black;
+}
+ 
+#nav {
+   box-shadow: 0 8px 6px -6px $black;
+   background-color: $black;
+   _padding: 5px;
+   _background: #999; 
+   _border:2px solid;
+   _padding: 0 0 0 -5px;   
+}
+
+#nav ul {
+   margin: 0;
+   _padding: 0 0 0 10px;    
+}
+#nav li {
+   float: left;
+   padding: 3px 3px;
+   background-color: #C8B692;
+   margin: 4px 1px 4px 0px;
+   list-style-type: none;
+   font-size: 16px;
+   border: 2px $black solid;
+}
+#nav li a {
+   _color: #000;  
+   text-decoration: none;    
+}
+
+#nav li a:hover {
+   text-decoration: underline;   
+}
+
+br.clearLeft {
+   clear: left;        
+}​
 
 .prize-booster {
   background-image: url(../images/blueribbon.png), url(../images/blueribbon.png);
