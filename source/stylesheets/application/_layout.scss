@@ -38,8 +38,6 @@
   padding-top: 8px;
 }
 
-                       /*HERE IS THE CSS FOR THE NAVIGATION MENU*/
-
 #navWrap {
    height: 30px;
 }
@@ -48,7 +46,7 @@
    padding: 5px;
    _background: #999; 
    _border:2px solid;
-   _padding: 0 0 0 20px;    
+   padding: 0 0 0 -5px;   
 }
 
 #nav ul {
@@ -57,12 +55,12 @@
 }
 #nav li {
    float: left;
-   padding: 3px 8px;
-   _background-color: #FFF;
-   margin: 0 3px 0 0;
+   padding: 3px 3px;
+   background-color: #C8B692;
+   margin: 5px 3px 0 0px;
    _color: #F00;
    list-style-type: none;
-   font-size: 18px;
+   font-size: 16px;
    border: 2px #000 solid;
 }
 #nav li a {
@@ -77,9 +75,6 @@
 br.clearLeft {
    clear: left;        
 }​
-
-                            /*HERE IS THE CSS FOR THE NAVIGATION MENU*/
-
 
 .prize-booster {
   background-image: url(../images/blueribbon.png), url(../images/blueribbon.png);
