@@ -46,13 +46,19 @@
 }
 
 .BetamorePB {
-  background-image: url(../images/blueribbon.png), url(../images/blueribbon.png);
-  background-position: left, right;
-  background-size: 30px 50px;
+  background-image: url(../images/blueribbon.png), 
+                    url(../images/blueribbon.png),
+                    url(../images/blueribbon.png),
+                    url(../images/blueribbon.png), 
+                    url(../images/blueribbon.png),
+                    url(../images/blueribbon.png);  
+  background-position: 5%, 24%, 42%, 60%, 79%, 97%;
+  background-size: 25px 40px;
   background-repeat: no-repeat;
   min-height: 50px;
-  width:50%;
+  width:70%;
 }
+
 
 .column {
   display: inline-block;
