@@ -187,20 +187,58 @@ section {
     margin-bottom: 2em; }
 
 /* line 107, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+.frame {
+  position: relative;
+  background-image: url("../images/frameopaque2.1.png");
+  background-size: 310px 100%;
+  width: 310px;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 2em;
+  padding-top: 6em;
+  padding-bottom: 6em; }
+
+/* line 120, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+.frame h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: .2em; }
+
+/* line 127, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+.small {
+  font-size: .8em; }
+
+/* line 132, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+.value {
+  text-align: center;
+  font-weight: 200;
+  font-family: "JF Ringmaster", serif;
+  margin-top: .2em;
+  margin-bottom: .2em; }
+
+/* line 139, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+.section-header1 {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-transform: uppercase; }
+
+/* line 146, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 .actions {
   text-align: center; }
 
-/* line 111, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+/* line 150, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 ul.list {
   margin-left: 15px; }
 
-/* line 112, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+/* line 151, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 ul.list li {
   font-size: 16px;
   list-style: disc;
   margin-bottom: 5px; }
 
-/* line 114, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+/* line 153, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 .judges li {
   display: block;
   font-size: 18px;
@@ -208,71 +246,71 @@ ul.list li {
   line-height: 48px;
   margin-bottom: 10px; }
 
-/* line 115, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+/* line 154, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 .judges li img {
   margin-right: 5px;
   vertical-align: middle; }
 
-/* line 117, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+/* line 156, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 .profile {
   width: 425px;
   margin: 0 auto; }
 
-/* line 118, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+/* line 157, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 .profile p {
   font-size: 16px; }
 
-/* line 119, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+/* line 158, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 .profile img {
   float: left;
   padding-right: 5px; }
 
-/* line 121, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+/* line 160, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 .jobreq h3 {
   font-size: 24px;
   margin-bottom: 10px; }
 
-/* line 122, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+/* line 161, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 .jobreq p {
   font-size: 14px;
   margin-top: 2px; }
 
-/* line 124, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+/* line 163, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 .winner {
   margin-top: 10px;
   border-style: solid;
   border-color: #000;
   border-width: 1px; }
 
-/* line 126, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+/* line 165, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 .sponsors .lead-sponsor {
   padding-top: 50px;
   text-align: center; }
 
-/* line 127, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+/* line 166, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 .sponsors .sponsor {
   padding-left: 30px; }
 
-/* line 128, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+/* line 167, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 .sponsors .sponsor img {
   max-width: 300px;
   max-height: 60px;
   padding: 5px 3px 3px 3px; }
 
-/* line 129, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+/* line 168, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 div#other-sponsors {
   width: 100%;
   text-align: center;
   padding: 15px 0; }
 
-/* line 130, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+/* line 169, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 .twitter {
   background: url(../images/twitter.png) no-repeat left center;
   display: block;
   padding: 5px 40px;
   text-decoration: none; }
 
-/* line 132, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+/* line 171, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 .attendees li {
   display: block;
   float: left;
@@ -281,7 +319,7 @@ div#other-sponsors {
   line-height: 24px;
   margin: 0 10px 10px 0; }
 
-/* line 133, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+/* line 172, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 .attendees li a {
   background-color: #BCAB88;
   background-color: rgba(106, 92, 66, 0.15);
@@ -293,7 +331,7 @@ div#other-sponsors {
   padding: 0 5px;
   text-decoration: none; }
 
-/* line 134, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
+/* line 173, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/_layout.scss */
 .attendees li a:hover {
   background-color: #AF9F7D;
   background-color: rgba(106, 92, 66, 0.25);
