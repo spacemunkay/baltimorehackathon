@@ -104,6 +104,45 @@
   }
 }
 
+.frame {
+    position: relative;
+    background-image: url("../images/frameopaque2.1.png");
+    background-size: 310px 100%;
+    width: 310px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 2em;
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+
+.frame h2 {
+  font-size: 1.2em;
+  font-weight: bold; 
+  margin-bottom: .2em;
+
+}
+
+.small {
+  font-size: .8em;
+}
+
+
+  .value {
+    text-align: center;
+    @include super-heading-text;
+    margin-top: .2em;
+    margin-bottom: .2em;
+  }
+ 
+.section-header1 {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
 .actions {
   text-align: center;
 }
