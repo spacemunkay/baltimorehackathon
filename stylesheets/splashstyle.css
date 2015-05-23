@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "FTAnchorYard-Italic";
+  src: url("/fonts/FTAnchorYard-Italic.eot?") format("eot"), url("/fonts/FTAnchorYard-Italic.woff") format("woff"), url("/fonts/FTAnchorYard-Italic.ttf") format("truetype"), url("/fonts/FTAnchorYard-Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+body{
+  background-color: #34e6e4 !important;
+}
+
+.wrapper{
+  background-color: #34e6e4;
+  width: 100%;
+  margin: 0;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 2em;
+}
+
+.col-center{
+  float: none;
+  margin: 0 auto;
+}
+
+#banner{
+  width: 20%;
+}
+
+h1.year{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 5em;
+}
+
+/**For the 1 in 2015**/
+.one{
+  font-family: 'FTAnchorYard-Italic', cursive;
+  font-size: 1em;
+}
+
+#logo{
+  width: 100%;
+}
+
+.subscribe{
+  margin-top: 120px;
+}
+
+.email-me {
+    position: relative;
+    width: 100%;
+}
+
+.email-me input{
+  width: 100%;
+  border-top: solid 1px #808080;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px 3px 10px 0px rgba(186,186,186,0.5);
+  -moz-box-shadow: inset 0px 3px 10px 0px rgba(186,186,186,0.5);
+  box-shadow: inset 0px 3px 10px 0px rgba(186,186,186,0.5);
+}
+#email::-webkit-input-placeholder {
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+}
+
+#email:-ms-input-placeholder {
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+}
+
+#email:-moz-placeholder {
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+}
+
+#email::-moz-placeholder {
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+}
+
+#email-button{
+  width: 50%;
+  height: auto;
+}
+
+.email-me button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 1px 2px;
+    width: 80px;
+    height: 44px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    border-right: solid 1px #cccccc;
+    background-color: #f3f3f3;
+}
+
+/**
+When screen reaches 800px
+banner becomes too small to read.
+This is to over ride that.
+**/
+@media (max-width: 800px) {
+  #banner{
+    width: 35%;
+  }
+}
+
+@media (max-width: 600px) {
+  #banner{
+    width: 50%
+  }
+}
