@@ -1,0 +1,173 @@
+#ribbon {
+  height: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #5E5542;
+  font-size: 18px;
+  line-height: 40px;
+
+  img {
+    height: 12px;
+  }
+
+  span {
+    display: inline-block;
+    margin: 0 1em;
+    font-size: 0.85em;
+  }
+}
+
+#container {
+  overflow: hidden;
+  position: relative;
+}
+
+#wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+}
+
+.section-header {
+  @include lined-heading(200px);
+  font-size: 1.5em;
+  margin-top: 0px;
+  margin-bottom: 1em;
+  padding-top: 8px;
+}
+
+.prize-booster {
+  background-image: url(../images/blueribbon.png), url(../images/blueribbon.png);
+  background-position: left, right;
+  background-size: 30px 50px;
+  background-repeat: no-repeat;
+  min-height: 50px;
+}
+
+.BetamorePB {
+  background-image: url(../images/blueribbon.png), 
+                    url(../images/blueribbon.png),
+                    url(../images/blueribbon.png),
+                    url(../images/blueribbon.png), 
+                    url(../images/blueribbon.png),
+                    url(../images/blueribbon.png);  
+  background-position: 5%, 24%, 42%, 60%, 79%, 97%;
+  background-size: 25px 40px;
+  background-repeat: no-repeat;
+  min-height: 50px;
+  width:70%;
+}
+
+
+.column {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 1em;
+  padding: 0;
+  width: 31.5%;
+  margin-right: 2.1%;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &.double {
+    width: 50%;
+  }
+
+  &.full {
+    width: 100%;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+
+}
+
+.column4 {
+  @extend .column;
+  width: 22.5%;
+}
+
+.hero {
+  width: 90%;
+  min-width: 280px;
+  margin: 0 auto 3em auto;
+
+  p {
+    margin-bottom: 2em;
+  }
+}
+
+.frame {
+    position: relative;
+    background-image: url("../images/frameopaque2.1.png");
+    background-size: 310px 100%;
+    width: 310px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 2em;
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+
+.frame h2 {
+  font-size: 1.2em;
+  font-weight: bold; 
+  margin-bottom: .2em;
+
+}
+
+.small {
+  font-size: .8em;
+}
+
+
+  .value {
+    text-align: center;
+    @include super-heading-text;
+    margin-top: .2em;
+    margin-bottom: .2em;
+  }
+ 
+.section-header1 {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.actions {
+  text-align: center;
+}
+
+ul.list { margin-left: 15px; }
+ul.list li { font-size: 16px; list-style: disc; margin-bottom: 5px; }
+
+.judges li { display: block; font-size: 18px; height: 48px; line-height: 48px; margin-bottom: 10px; }
+.judges li img { margin-right: 5px; vertical-align: middle; }
+
+.profile { width: 425px; margin: 0 auto; }
+.profile p{ font-size: 16px; }
+.profile img { float: left; padding-right: 5px; }
+
+.jobreq h3 { font-size: 24px; margin-bottom: 10px; }
+.jobreq p { font-size: 14px; margin-top: 2px; }
+
+.winner { margin-top: 10px; border-style: solid; border-color: #000; border-width: 1px;}
+
+.sponsors .lead-sponsor { padding-top: 50px; text-align: center; }
+.sponsors .sponsor { padding-left: 30px }
+.sponsors .sponsor img { max-width: 300px; max-height: 60px; padding: 5px 3px 3px 3px; }
+div#other-sponsors { width: 100%; text-align: center; padding: 15px 0; }
+.twitter { background: url(../images/twitter.png) no-repeat left center; display: block; padding: 5px 40px; text-decoration: none; }
+
+.attendees li { display: block; float: left; font-size: 14px; height: 24px; line-height: 24px; margin: 0 10px 10px 0;  }
+.attendees li a { background-color: #BCAB88; background-color: rgba(106, 92, 66, 0.15); -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; display: block; float: left; padding: 0 5px; text-decoration: none; }
+.attendees li a:hover { background-color: #AF9F7D; background-color: rgba(106, 92, 66, 0.25); color: #000; }

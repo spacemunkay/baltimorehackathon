@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title><%= current_page.data.title || "The Fourth Baltimore Hackathon" %></title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <%= stylesheet_link_tag "application" %>
+    <link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="../favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon"/>
+
+    <meta name="viewport" content="width=device-width">
+
+  </head>
+
+  <body>
+    <%= yield %>
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+.button {
+  @include bold-body-text;
+  @include appearance(none);
+  display: inline-block;
+  text-transform: uppercase;
+  border: 3px double $black;
+  background: transparent;
+  color: $black;
+  padding: 0.6em 3em;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 2em;
+
+  &:hover {
+    color: $black;
+    border: 3px solid $black;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

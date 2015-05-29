@@ -115,4 +115,3 @@ function bob(floater)
                              floater.amplitude * Math.sin(feq * floater.x + floater.shift) +
                              'px');
 }
-;
