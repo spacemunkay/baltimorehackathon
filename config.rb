@@ -17,7 +17,7 @@
 # page "/path/to/file.html", :layout => false
 #
 # With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
+page "./source/2014/index.html.erb", :layout => :application_layout_2014
 #
 # A path which all have the same layout
 # with_layout :admin do
@@ -36,7 +36,7 @@
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# activate :livereload
+activate :livereload
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -58,6 +58,7 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
+  # Use relative URLs
   activate :relative_assets
   set :relative_links, true
 
