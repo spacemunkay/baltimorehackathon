@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>The Third Baltimore Hackathon</title>
+
+    <%= stylesheet_link_tag "application_layout_2014" %>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+    <meta name="viewport" content="width=device-width">
+
+    <script type="text/javascript" src="//use.typekit.net/mok6can.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+
+  <body>
+    <%= yield %>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>
