@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "FTAnchorYard";
+  src: url("./fonts/FTAnchorYard-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "SailorsFatTatto";
+  src: url("./fonts/Sailors-Fat-Tattoo-Script.ttf") format("truetype"); }
+/* line 11, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+body {
+  background-color: #34e6e4 !important; }
+
+/* line 15, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+.wrapper {
+  background-color: #34e6e4;
+  width: 100%;
+  margin: 0;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 4em; }
+
+/* line 23, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+.boats-div-placeholder {
+  height: 210px;
+  position: relative;
+  overflow-x: hidden; }
+
+/* line 29, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+.banner-container {
+  padding: 2em 0 0 0; }
+
+/* line 32, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+#banner {
+  width: 6em; }
+
+/* line 36, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+.title {
+  font-family: 'SailorsFatTatto';
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em; }
+
+/* line 43, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+.anchors {
+  font-family: 'FTAnchorYard'; }
+
+/* line 47, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+.column-wrapper, .row {
+  padding: 0;
+  margin: 0; }
+
+/* line 52, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+.col-center {
+  float: none;
+  margin: 0 auto; }
+
+/* line 57, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+h1.year {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 4em;
+  padding-top: 0.4em; }
+
+/**For the 1 in 2015**/
+/* line 64, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+.one {
+  font-family: 'SailorsFatTatto', cursive;
+  font-size: 1em; }
+
+/* line 69, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+.row-email-container {
+  padding-bottom: 1em; }
+
+/* line 73, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+.row-email-container p {
+  font-size: 0.8em; }
+
+/* line 77, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+.email-me .input-group {
+  border-top: solid 1px #808080;
+  border-radius: 5px; }
+
+/**
+When screen reaches 800px
+banner becomes too small to read.
+This is to over ride that.
+**/
+@media (max-width: 1150px) {
+  /* line 88, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+  #banner {
+    width: 5em; }
+
+  /* line 91, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+  .title {
+    font-size: 0.9em; }
+
+  /* line 94, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+  h1.year {
+    font-size: 3em; } }
+@media (max-width: 900px) {
+  /* line 100, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+  .title {
+    font-size: 0.65em; }
+
+  /* line 103, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+  h1.year {
+    font-size: 2em; }
+
+  /* line 106, /Users/Sal/dev/projects/baltimorehackathon/source/stylesheets/splashstyle.scss */
+  .row-email-container p {
+    font-size: 0.55em; } }
