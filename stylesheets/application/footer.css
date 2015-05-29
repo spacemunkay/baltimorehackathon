@@ -1,0 +1,13 @@
+/* line 1, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/footer.scss */
+footer {
+  background: rgba(103, 91, 68, 0.15);
+  height: 200px;
+  margin-top: 150px;
+  text-align: center; }
+  /* line 7, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/footer.scss */
+  footer p {
+    font-size: 13px;
+    padding-top: 15px; }
+    /* line 11, /Users/jdenney/workspace/baltimorehackathon/source/stylesheets/application/footer.scss */
+    footer p small {
+      font-size: 11px; }

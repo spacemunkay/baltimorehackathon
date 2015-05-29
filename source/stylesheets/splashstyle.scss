@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "FTAnchorYard";
+  src: url("./fonts/FTAnchorYard-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SailorsFatTatto";
+  src: url("./fonts/Sailors-Fat-Tattoo-Script.ttf") format("truetype");
+}
+
+body{
+  background-color: #34e6e4 !important;
+}
+#ribbon {
+  a {
+    color: #730810;
+  }
+  img {
+    vertical-align: middle;
+  }
+}
+
+.wrapper{
+  background-color: #34e6e4;
+  width: 100%;
+  margin: 0;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 4em;
+  .column-wrapper {
+    &, .row {
+      padding: 0;
+      margin: 0;
+    }
+    .boats-div-placeholder {
+      height: 210px;
+      position: relative;
+      overflow: hidden;
+    }
+    .banner-container {
+      padding: 2em 0 0 0;
+      #banner{
+        width: 6em;
+      }
+    }
+    h1.year {
+      font-family: 'Fredericka the Great', cursive;
+      font-size: 4em;
+      /**For the 1 in 2015**/
+      .one {
+        font-family: 'SailorsFatTatto', cursive;
+        font-size: 1em;
+      }
+    }
+    .title {
+      font-family: 'SailorsFatTatto';
+      font-weight: bold;
+      color: black;
+      font-size: 1.2em;
+      .anchors {
+        font-family: 'FTAnchorYard';
+      }
+    }
+    .row-email-container {
+      padding-bottom: 1em;
+      p {
+        font-size: 0.8em;
+      }
+      .email-me .input-group {
+        border-top: solid 1px #808080;
+        border-radius: 5px;
+      }
+    }
+  }
+}
